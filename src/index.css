@@ -1,0 +1,67 @@
+🖥️ Force full-page height
+html, body {
+  background-color: #f3f3f3; /* ✅ Excel-like background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🟢 Center the spreadsheet container */
+.spreadsheet-container {
+  width: 90vw;
+  height: 90vh;
+  overflow: hidden;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ht_master {
+  overflow: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* 🔹 Ensure the table fills the container */
+.handsontable {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 🟡 Excel-like column headers */
+.ht_clone_top th {
+  background-color: #d6e4ff;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #0078d4;
+}
+
+/* 🔹 Row headers */
+.ht_clone_left th {
+  background-color: #eaf1fb;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 🟢 Selected cell styling */
+.handsontable td.current {
+  background-color: rgba(0, 255, 0, 0.3) !important;
+}
+
+/* 📌 Center text inside cells */
+.handsontable td {
+  text-align: center;
+} 
+
+
+
+
+
+
+
